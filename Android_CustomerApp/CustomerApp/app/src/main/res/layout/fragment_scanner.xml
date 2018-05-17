@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffb3b3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+
+       <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Scan a Bill"
+            android:onClick="scanQR"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/button_default_bg"
+            android:drawableLeft="@drawable/scan"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_top_bg"
+        android:padding="10dp"
+        android:hint="New Payment"
+        android:textColorHint="#ff3300"
+        android:drawableLeft="@drawable/rupee"/>
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="First Name"
+            android:textColorHint="#ff3300"
+            />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="Last Name"
+            android:textColorHint="#ff3300"
+            />
+
+        <EditText
+            android:id="@+id/accountnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="Account Number"
+            android:textColorHint="#ff3300"
+            />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:text="Pay Now"
+        style="@style/DefaultButtonText"
+        android:background="@drawable/button_default_bg"
+        />
+</LinearLayout>
+</RelativeLayout>

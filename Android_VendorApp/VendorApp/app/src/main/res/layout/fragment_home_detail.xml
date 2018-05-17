@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffb3b3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/home_detail"
+            style="?android:attr/textAppearanceMedium" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="16dp" android:textIsSelectable="true"
+            tools:context=".HomeDetailFragment" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="Enter Amount"
+            android:textColorHint="#ff3300"
+            android:drawableLeft="@drawable/rupee"/>
+
+        <Button
+            android:id="@+id/btnBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="New Bill"
+            android:onClick="NewQR"
+            style="@style/DefaultButtonText"
+            android:textColor="#ffffb3"
+            android:background="@drawable/button_default_bg"
+            android:drawableLeft="@drawable/scan"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:id="@+id/qrcode"
+            android:layout_span="3"
+            android:layout_gravity="center"
+            android:background="@drawable/imageborder"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="10"
+            android:padding="4dip" >
+        </ProgressBar>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
